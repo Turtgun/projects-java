@@ -1,3 +1,5 @@
+package ji;
+
 public class SundaTiger {
     private static int nextTagNumber = 1;
     private int tagNumber;
@@ -47,13 +49,13 @@ public class SundaTiger {
         return nombre;
     }
 
-    public String ageOneYear() {
+    public void ageOneYear() {
         age++;
-        weight += (age < 5)? (Math.random()*15 + 40) : (Math.random() * 10) + 60
+        weight += (age < 5)? (Math.random()*15 + 40) : (Math.random() * 10) + 60;
     	length += (Math.random() * 0.1);
     }
 
     public String toString() {
-	    return "Tag Number: " + myTag + "\nName: " + nombre + "\nAge: " + age + "\nGender: " + getGender();
+	    return "Tag Number: " + tagNumber + "\nName: " + nombre + "\nAge: " + age + "\nGender: " + getGender();
     }
 }

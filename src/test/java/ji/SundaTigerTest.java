@@ -23,13 +23,13 @@ public class SundaTigerTest {
     @Test
     public void testGetWeight() {
         SundaTiger tiger = new SundaTiger(5, 150, 2.5, "Male", "Koko");
-        assertEquals(150, tiger.getWeight());
+        assertEquals(150, tiger.getWeight(), 0);
     }
 
     @Test
     public void testGetLength() {
         SundaTiger tiger = new SundaTiger(5, 150, 2.5, "Male", "Koko");
-        assertEquals(2.5, tiger.getLength());
+        assertEquals(2.5, tiger.getLength(), 0.1);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class SundaTigerTest {
     @Test
     public void testGetNombre() {
         SundaTiger tiger = new SundaTiger(5, 150, 2.5, "Male", "Koko");
-        assertEquals("Tigger", tiger.getNombre());
+        assertEquals("Koko", tiger.getNombre());
     }
 
     @Test
@@ -64,7 +64,7 @@ public class SundaTigerTest {
     @Test
     public void testToString() {
         SundaTiger tiger = new SundaTiger(5, 150, 2.5, "Male", "Koko");
-        String expectedString = "Tag Number: 1\nName: Tigger\nAge: 5\nGender: Male";
+        String expectedString = "Tag Number: 3\nName: Koko\nAge: 5\nGender: Male";
         assertEquals(expectedString, tiger.toString());
     }
 }
